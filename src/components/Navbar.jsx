@@ -7,9 +7,15 @@ const Navbar = () => {
         <div className="logo">
           <div className="logo-text">JL</div>
         </div>
-        <div className="nav-item">HOME</div>
-        <div className="nav-item">ABOUT</div>
-        <div className="nav-item">PROJECTS</div>
+        <a href="/" className="nav-item">
+          HOME
+        </a>
+        <a href="/about" className="nav-item">
+          ABOUT
+        </a>
+        <a href="/projects" className="nav-item">
+          PROJECTS
+        </a>
       </div>
       <img
         className="email"

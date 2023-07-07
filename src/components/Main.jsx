@@ -1,17 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Skills from "./Skills";
-import SocialLinks from "./SocialLinks";
+import Footer from "./Footer";
 
-export const Frame = () => {
+export const Main = () => {
   return (
-    <div>
-      <Navbar />
-      <img
-        className="separator-line"
-        alt="Line"
-        src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/line-19.svg"
-      />
+    <div className="page-container">
       <div className="main-frame">
         <div className="content-wrapper">
           <div className="text-section">
@@ -27,17 +19,15 @@ export const Frame = () => {
           <div className="image-section">
             <img
               className="profile-image"
-              alt="Image"
+              alt=""
               src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/image-1@2x.png"
             />
           </div>
         </div>
-        <Skills />
-        <div className="socials-label">SOCIALS</div>
-        <SocialLinks />
+        <Footer />
       </div>
     </div>
   );
 };
 
-export default Frame;
+export default Main;
