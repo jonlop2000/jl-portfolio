@@ -7,90 +7,80 @@ html {
   padding: 0;
 }
 
-/* Add this new rule: */
-.page-container {
+.main-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh; /* Minimum height of 100% of the viewport height */
 }
 
-.main-frame {
-  background-color: #ffffff;
-  flex-grow: 1; /* This makes the main content grow to take up any remaining space */
+.hero-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-grow: 1; /* Allows this div to take up remaining space */
 }
 
-.content-wrapper {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 55px 90px;
-  box-sizing: border-box;
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.hero .time-version {
   display: flex;
   justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0; /* Add this */
 }
 
-.text-section {
+.hero .time,
+.hero .version {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  justify-content: flex-start;
 }
 
-.name {
-  color: #000000;
-  font-family: "Inter", Helvetica;
-  font-size: 50px;
+.time-text,
+.version-text,
+.year-text {
+  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
-  letter-spacing: 3.5px;
-  margin-top: 50px; /* Adjust as needed */
-  text-align: left; /* Align text to the left */
+  letter-spacing: 0.96px;
+  line-height: normal;
 }
 
-.role {
-  color: #000000;
-  font-family: "Inter", Helvetica;
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: -3.24px;
-  width: 50%;
-  display: flex;
-  flex-shrink: 0;
+.hero-section {
   align-items: center;
   flex-direction: column;
-  text-align: center;
-}
-
-.description {
-  color: #000000;
-  font-family: "Inter", Helvetica;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 29px;
-  width: 100%;
-  text-align: center;
-}
-
-.image-section {
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-grow: 1; /* Allows this div to take up remaining space */
+  padding: 100px;
 }
 
-.profile-image {
-  max-width: 397px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
+.hero .name {
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 120px;
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: -6px;
+  line-height: normal;
+  padding: 20px;
 }
 
-.separator-line {
-  width: 100%;
-  height: 4px;
-  object-fit: cover;
-  margin-bottom: 20px;
+.hero .role {
+  font-size: 50px;
+  font-weight: 200;
+  letter-spacing: -2.5px;
+}
+
+.hero-description {
+  font-weight: 400px;
+  font-size: 20px;
+  width: 512px;
 }
 
 /* Navbar */
@@ -152,6 +142,13 @@ html {
     width: 100%;
     justify-content: center;
   }
+}
+
+.separator-line {
+  width: 100%;
+  height: 4px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 /* Skills Container */
@@ -262,92 +259,4 @@ html {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* About Me */
-
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.box-wrapper {
-  border: 0px none;
-  height: 386px;
-  width: 559px;
-}
-
-.box .frame {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  width: fit-content;
-}
-
-.box .text-wrapper {
-  color: #000000;
-  font-family: "Inter-Bold", Helvetica;
-  font-size: 70px;
-  font-weight: 700;
-  height: 85px;
-  letter-spacing: 3.85px;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: 435px;
-}
-
-.box .birthdate {
-  color: #000000;
-  font-family: "Inter-Light", Helvetica;
-  font-size: 32px;
-  font-weight: 300;
-  height: 61px;
-  letter-spacing: 3.36px;
-  line-height: 51.4px;
-  position: relative;
-  white-space: nowrap;
-  width: 321px;
-}
-
-.box .city {
-  color: #000000;
-  font-family: "Inter-Light", Helvetica;
-  font-size: 22px;
-  font-weight: 300;
-  height: 37px;
-  letter-spacing: 2.31px;
-  line-height: 35.3px;
-  position: relative;
-  white-space: nowrap;
-  width: 175px;
-}
-
-.box .name {
-  color: #000000;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 20px;
-  font-weight: 500;
-  height: 30px;
-  letter-spacing: 2.1px;
-  line-height: 32.1px;
-  position: relative;
-  white-space: nowrap;
-  width: 373px;
-}
-
-.box .about-me {
-  color: #000000;
-  font-family: "Inter-Light", Helvetica;
-  font-size: 20px;
-  font-weight: 300;
-  height: 109px;
-  letter-spacing: 2.1px;
-  line-height: 32.1px;
-  position: relative;
-  width: 540px;
 }

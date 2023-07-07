@@ -9,17 +9,9 @@ import Navbar from "./components/Navbar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Navbar />
-    <img
-      className="separator-line"
-      alt="Line"
-      src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/line-19.svg"
-    />
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
