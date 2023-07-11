@@ -14,7 +14,7 @@ const Navbar = () => {
           ABOUT
         </a>
         <a href="/projects" className="nav-item">
-          PROJECTS
+          PROJECT
         </a>
       </div>
       <img
