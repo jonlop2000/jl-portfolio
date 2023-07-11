@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import About from "./About";
+import Projects from "./Projects";
 
 export const Main = () => {
   return (
@@ -10,6 +12,9 @@ export const Main = () => {
 
       <div>
         <Hero />
+        <About />
+        <Projects />
+        <Footer />
       </div>
     </div>
   );

@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timerId);
+    };
+  }, []);
+
   return (
     <div className="hero">
       <div className="time-version">
-        <div className="time time-text">12:23PM</div>
+        <div className="time time-text">{time.toLocaleTimeString()}</div>
         <div className="version">
           <div className="version-text">VERSION 1.0</div>
           <div className="year-text">2023</div>
