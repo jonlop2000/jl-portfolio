@@ -311,6 +311,24 @@ html {
   width: 214px;
 }
 
+.project .project-years {
+  color: #000000;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.project .project-description {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2.1px;
+  line-height: normal;
+  width: 175px;
+}
+
 .project .project-category {
   color: #000000;
   font-family: "Inter-MediumItalic", Helvetica;
@@ -384,6 +402,146 @@ html {
   position: relative;
   z-index: 1;
   align-items: center; /* Center the content vertically */
+}
+
+/* Contact */
+
+.contact {
+  align-items: center;
+  justify-content: center;
+  border: 1px none;
+  display: inline-flex;
+  gap: 157px;
+  min-height: 536px;
+  min-width: 1311px;
+  position: relative;
+  width: 100%;
+  padding-top: 180px;
+  padding-bottom: 230px;
+}
+
+.contact .email-section {
+  background-color: #2f2b26;
+  border-radius: 50px;
+  height: 536px;
+  overflow: hidden;
+  position: relative;
+  width: 695px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .resume {
+  color: #fffdfd;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 1.14px;
+  line-height: normal;
+  white-space: nowrap;
+  width: 171px;
+  text-align: center;
+}
+
+.contact .resume-header {
+  font-style: italic;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .space {
+  font-style: italic;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .additional {
+  color: #ffffff;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.42px;
+  line-height: normal;
+  width: 503px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact .email-header {
+  color: #ffffff;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  width: 131px;
+}
+
+.contact .email {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+  line-height: normal;
+}
+
+.contact .contact-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact .contact-desc-text {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact .contact-heading {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+.contact .contact-title {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+  height: 58px;
+  letter-spacing: 1.44px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: 251px;
+}
+
+.contact .contact-subtitle {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 400;
+  height: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 130px;
+}
+
+.contact .contact-information {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  height: 274px;
+  letter-spacing: -0.3px;
+  line-height: 33.5px;
+  position: relative;
+  text-align: right;
+  width: 420px;
 }
 
 /* Social Links */

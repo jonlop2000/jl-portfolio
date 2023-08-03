@@ -16,6 +16,9 @@ const Navbar = () => {
         <a href="/projects" className="nav-item">
           PROJECT
         </a>
+        <a href="/contact" className="nav-item">
+          CONTACT
+        </a>
       </div>
       <img
         className="email"

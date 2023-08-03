@@ -11,16 +11,16 @@ const Projects = () => {
         <div className="project-section">
           <div className="project-details">
             <div className="project-title">01 UNTITLED</div>
-            <div>2022-2023</div>
-            <div>DESCRIPTION</div>
+            <div className="project-years">2022-2023</div>
+            <div className="project-description">DESCRIPTION</div>
           </div>
           <div className="line" />
         </div>
         <div className="project-section">
           <div className="project-details">
             <div className="project-title">02 UNTITLED</div>
-            <div>2023</div>
-            <div>DESCRIPTION</div>
+            <div className="project-years">2023</div>
+            <div className="project-description">DESCRIPTION</div>
           </div>
           <div className="line" />
         </div>
@@ -31,16 +31,16 @@ const Projects = () => {
         <div className="project-section">
           <div className="project-details">
             <div className="project-title">03 UNTITLED</div>
-            <div>2022</div>
-            <div>DESCRIPTION</div>
+            <div className="project-years">2022</div>
+            <div className="project-description">DESCRIPTION</div>
           </div>
           <div className="line" />
         </div>
         <div className="project-section">
           <div className="project-details">
             <div className="project-title">04 UNTITLED</div>
-            <div>2022</div>
-            <div>DESCRIPTION</div>
+            <div className="project-years">2022</div>
+            <div className="project-description">DESCRIPTION</div>
           </div>
           <div className="line" />
         </div>
