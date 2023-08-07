@@ -358,8 +358,8 @@ html {
 .project-modal {
   background: white;
   border-radius: 10px;
-  max-width: 1200px;
-  max-height: 600px;
+  max-width: 1050px; /* Adjusted width */
+  max-height: 100vh;
   width: 90%;
   height: 90%;
   padding: 20px;
@@ -369,30 +369,97 @@ html {
 
 .project-modal-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .modal-left {
-  flex-basis: 40%;
-  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-right {
-  flex-basis: 60%;
-  padding-left: 10px;
+.arrow {
+  cursor: pointer;
 }
 
 .modal-right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%; /* Image will take up to 100% of the container width */
+  max-height: 370px; /* Set a maximum height */
+  display: block; /* Remove any default margins/paddings */
+  object-fit: contain; /* Image will scale to maintain its aspect ratio */
+  border-radius: 1%;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
-.modal-about {
-  width: 50%;
+/* Custom bullet style */
+.modal-about ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
+.modal-about li {
+  position: relative;
+  padding-left: 1.5em; /* Space for the custom bullet */
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.modal-about li:before {
+  content: "•"; /* Custom bullet symbol */
+  position: absolute;
+  left: 0; /* Position the bullet before the text */
+  color: #333; /* Bullet color */
+  font-weight: bold;
+}
+
+.image-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+.image-scroll {
+  color: white;
+  background-color: black;
+  opacity: 80%;
+  border-radius: 20%;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+}
 /* Skills Container */
 
 .skills-container {
