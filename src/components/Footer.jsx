@@ -1,5 +1,3 @@
-// Skills.js
-
 import React from "react";
 import LinePattern from "./LinePattern";
 
@@ -35,20 +33,32 @@ const Skills = () => {
       </div>
 
       <div className="skills-container">
-        <div className="title hide-on-mobile ">SOCIALS</div>
+        <div className="title hide-on-mobile">SOCIALS</div>
         <div className="skill-set">
-          <div className="social-link">LINKEDIN</div>
-          <img
-            className="icon-circle"
-            alt="Icon circle linkedin"
-            src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/---icon--circle-linkedin-@2x.png"
-          />
-          <div className="social-link">GITHUB</div>
-          <img
-            className="icon-circle"
-            alt="Icon circle"
-            src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/---icon--circle-githubalt-@2x.png"
-          />
+          <a
+            href="https://www.linkedin.com/in/jonathan-lopez-61a0331b3/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-link">LINKEDIN</div>
+            <img
+              className="icon-circle"
+              alt="Icon circle linkedin"
+              src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/---icon--circle-linkedin-@2x.png"
+            />
+          </a>
+          <a
+            href="https://github.com/jonlop2000"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-link">GITHUB</div>
+            <img
+              className="icon-circle"
+              alt="Icon circle"
+              src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/---icon--circle-githubalt-@2x.png"
+            />
+          </a>
         </div>
       </div>
     </LinePattern>
