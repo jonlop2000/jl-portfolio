@@ -6,36 +6,36 @@ import LinePattern from "./LinePattern";
 const Skills = () => {
   return (
     <LinePattern
+      className
       lengths={[
         [20, 70],
         [30, 60],
         [40, 50],
       ]}
     >
-      <div className="skills-container">
-        <div className="title">CODING LANGUAGES/FRAMEWORKS</div>
-        <div className="skill-set">
-          <div className="skill">JAVASCRIPT</div>
-          <div className="skill">PYTHON</div>
-          <div className="skill">JAVA</div>
-          <div className="skill">HTML</div>
-          <div className="skill">CSS</div>
-          <div className="skill">SQL</div>
+      <div className="skills-container hide-on-mobile">
+        <div className="title hide-on-mobile">CODING LANGUAGES/FRAMEWORKS</div>
+        <div className="skill-set hide-on-mobile">
+          <div className="skill hide-on-mobile">JAVASCRIPT</div>
+          <div className="skill hide-on-mobile">PYTHON</div>
+          <div className="skill hide-on-mobile">JAVA</div>
+          <div className="skill hide-on-mobile">HTML</div>
+          <div className="skill hide-on-mobile">CSS</div>
+          <div className="skill hide-on-mobile">SQL</div>
+        </div>
+      </div>
+
+      <div className="skills-container hide-on-mobile">
+        <div className="title hide-on-mobile">FRAMEWORKS</div>
+        <div className="skill-set hide-on-mobile">
+          <div className="skill hide-on-mobile">REACT</div>
+          <div className="skill hide-on-mobile">DJANGO</div>
+          <div className="skill hide-on-mobile">NEXTJS</div>
         </div>
       </div>
 
       <div className="skills-container">
-        <div className="title">FRAMEWORKS</div>
-        <div className="skill-set">
-          <div className="skill">REACT</div>
-          <div className="skill">DJANGO</div>
-          <div className="skill">NEXTJS</div>
-        </div>
-      </div>
-
-      {/* Third layer is empty in this case, but you can add content here */}
-      <div className="skills-container">
-        <div className="title">SOCIALS</div>
+        <div className="title hide-on-mobile ">SOCIALS</div>
         <div className="skill-set">
           <div className="social-link">LINKEDIN</div>
           <img

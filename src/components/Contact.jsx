@@ -2,19 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <div className="email-section">
-        <div className="resume">
-          <span className="resume-header">RESUME</span>
-          <span className="space">&nbsp;</span>
-        </div>
-        <p className="additional">
-          ANY ADDITIONAL INFORMATION/RESUME CAN BE PROVIDED UPON REQUEST
-        </p>
-        <div className="email-header">EMAIL</div>
-        <div className="email">jonlop2000@gmail.com</div>
-      </div>
-      {/* <div className="contact-desc"> */}
+    <div className="contact" id="contact">
       <div className="contact-desc-text">
         <div className="contact-heading">
           <h1 className="contact-title">CONTACT</h1>
@@ -27,6 +15,19 @@ const Contact = () => {
           bring a unique creative idea to life, I am equipped to make it happen.
           Let's collaborate and turn your vision into reality.
         </p>
+      </div>
+      {/* <div className="contact-desc"> */}
+
+      <div className="email-section">
+        <div className="resume">
+          <span className="resume-header">RESUME</span>
+          <span className="space">&nbsp;</span>
+        </div>
+        <p className="additional">
+          ANY ADDITIONAL INFORMATION/RESUME CAN BE PROVIDED UPON REQUEST
+        </p>
+        <div className="email-header">EMAIL</div>
+        <div className="email">jonlop2000@gmail.com</div>
       </div>
     </div>
     // </div>

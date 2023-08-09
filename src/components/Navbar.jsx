@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -7,24 +8,24 @@ const Navbar = () => {
         <div className="logo">
           <div className="logo-text">JL</div>
         </div>
-        <a href="/" className="nav-item">
+
+        <Link to="home" smooth={true} duration={500} className="nav-item">
           HOME
-        </a>
-        <a href="/about" className="nav-item">
+        </Link>
+        <Link to="about" smooth={true} duration={500} className="nav-item">
           ABOUT
-        </a>
-        <a href="/projects" className="nav-item">
+        </Link>
+        <Link to="projects" smooth={true} duration={500} className="nav-item">
           PROJECT
-        </a>
-        <a href="/contact" className="nav-item">
-          CONTACT
-        </a>
+        </Link>
       </div>
-      <img
-        className="email"
-        alt="Email"
-        src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/email@2x.png"
-      />
+      <Link to="contact" smooth={true} duration={500} className="nav-item">
+        <img
+          className="email"
+          alt="Email"
+          src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/email@2x.png"
+        />
+      </Link>
     </div>
   );
 };

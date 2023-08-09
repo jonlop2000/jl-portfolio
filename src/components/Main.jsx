@@ -9,9 +9,8 @@ import Contact from "./Contact";
 export const Main = () => {
   return (
     <div className="main-container">
-      <Navbar />
-
       <div>
+        <Navbar />
         <Hero />
         <About />
         <Projects />

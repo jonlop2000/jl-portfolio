@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="time-version">
         <div className="time time-text">{time.toLocaleTimeString()}</div>
         <div className="version">

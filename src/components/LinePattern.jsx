@@ -8,16 +8,16 @@ function LinePattern({ lengths, children }) {
   }
 
   return (
-    <div className="container">
+    <div className="container ">
       {lengths.map((lengthPair, i) => (
         <div key={i} className="layer">
           <div
-            className="line"
+            className="line hide-on-mobile"
             style={{ width: `${lengthPair[0]}%`, left: 0 }}
           />
           <div className="text-container">{children[i]}</div>
           <div
-            className="line"
+            className="line hide-on-mobile"
             style={{ width: `${lengthPair[1]}%`, right: 0 }}
           />
         </div>

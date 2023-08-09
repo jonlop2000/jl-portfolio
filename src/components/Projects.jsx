@@ -130,7 +130,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="project">
+    <div className="project" id="projects">
       <div className="project-wrapper">
         <div className="projects">PROJECTS</div>
         <div className="years">© 2022-2023</div>
@@ -140,8 +140,12 @@ const Projects = () => {
           <div key={index} className="project-section">
             <div className="project-details">
               <div className="project-title">{project.title}</div>
-              <div className="project-years">{project.years}</div>
-              <div className="project-description">{project.description}</div>
+              <div className="project-years hide-on-mobile">
+                {project.years}
+              </div>
+              <div className="project-description hide-on-mobile">
+                {project.description}
+              </div>
               <AiOutlineArrowRight
                 className="arrow"
                 onClick={() => openModal(project)}
@@ -204,14 +208,6 @@ const Projects = () => {
               <button className="close-modal-btn" onClick={closeModal}>
                 X
               </button>
-              {/* <button className="github-redirect">
-                GITHUB{" "}
-                <img
-                  className="icon-circle"
-                  alt="Icon circle"
-                  src="https://generation-sessions.s3.amazonaws.com/33d2908413a6d70fac3fb4d2e323bc4b/img/---icon--circle-githubalt-@2x.png"
-                />
-              </button> */}
             </Modal>
           </div>
         ))}

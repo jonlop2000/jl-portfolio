@@ -5,7 +5,7 @@ import old from "../img/old.JPG";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="young-wrapper">
         <img className="young" src={young} />
       </div>
@@ -16,21 +16,12 @@ const About = () => {
         <div className="name">JONATHAN ALEJANDRO LOPEZ</div>
         <p className="about-me">
           Recent graduate from San Jose State University. I am pursuing a career
-          in Full Stack development with a focus on design.{" "}
+          in Full Stack development with a focus on design. Hobbies include
+          playing video games, listening to music, and playing sports
         </p>
       </div>
       <div className="old-section">
         <img className="old" src={old} />
-        <div className="hobbies-title">INTERESTS/ HOBBIES</div>
-        <h1 className="hobbies">
-          -Music
-          <br />
-          -Video Games
-          <br />
-          -Sports
-          <br />
-          -Coding :D
-        </h1>
       </div>
     </div>
   );
