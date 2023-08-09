@@ -151,7 +151,6 @@ const Projects = () => {
                 onClick={() => openModal(project)}
               />
             </div>
-            <div className="line" />
             <Modal
               isOpen={currentProject === project}
               onRequestClose={closeModal}
@@ -165,7 +164,7 @@ const Projects = () => {
                   <p>{project.languages}</p>
                   {project.about && <p>{project.about.intro}</p>}
                   {project.about && (
-                    <ul>
+                    <ul className="hide-on-mobile">
                       {project.about.keyFeatures.map((feature, index) => (
                         <li key={index}>{feature}</li>
                       ))}

@@ -8,14 +8,17 @@ import Contact from "./Contact";
 
 export const Main = () => {
   return (
-    <div className="main-container">
-      <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
+    <div>
+      <Navbar />
+
+      <div className="main-container">
+        <div>
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </div>
   );

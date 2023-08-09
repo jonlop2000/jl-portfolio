@@ -1,5 +1,13 @@
 /* Home */
 
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* .navbar * {
+  border: 1px solid red;
+} */
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -12,8 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
+    /* Add this line */
   }
 }
 
@@ -83,14 +92,17 @@
   .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden; /* Add this line */
+    width: auto;
   }
 
   .hero .time-version {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 100%; /* Change to 100% */
     margin: 0 auto;
   }
 
@@ -116,6 +128,7 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     padding: 50px;
+    text-align: center;
   }
 
   .hero .name {
@@ -135,9 +148,10 @@
   }
 
   .hero-description {
-    font-weight: 400px;
+    font-weight: 400; /* Remove the 'px' */
     font-size: 15px;
-    width: 350px;
+    width: 100%; /* Change to 100% */
+    max-width: 350px; /* Add a max-width if needed */
   }
 }
 
@@ -253,7 +267,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 40%;
+    text-align: center;
+    width: 100%; /* Ensuring it takes full width */
   }
 
   .about .title {
@@ -398,48 +413,50 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Make sure the navbar takes up the full width of the viewport */
+    }
 
-  .navbar .left-side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25%;
-  }
+    .navbar .left-side {
+      display: flex;
+      justify-content: center; /* Center the logo within the left-side div */
+      align-items: center;
+      width: 100%; /* Take up the full width of the navbar */
+    }
 
-  .navbar .nav-item {
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0;
-    white-space: nowrap;
-  }
+    /* Hide all nav items except the logo */
+    .hide-on-mobile {
+      display: none;
+    }
 
-  .navbar .email {
-    height: 20px;
-    width: 20px;
-  }
+    .navbar .nav-item {
+      display: none; /* Hide other nav items */
+    }
 
-  .navbar .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    height: 40px;
-    width: 40px;
-  }
+    .navbar .email {
+      display: none; /* Hide the email icon */
+    }
 
-  .navbar .logo .logo-text {
-    color: #ffffff;
-    font-family: "Inter", Helvetica;
-    font-size: 18px;
-    font-weight: 800;
+    .navbar .logo {
+      background-color: #000000;
+      height: 40px;
+      width: 40px;
+      margin: 0 auto; /* This will ensure the logo is centered */
+    }
+
+    .navbar .logo .logo-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-family: "Inter", Helvetica;
+      font-size: 18px;
+      font-weight: 800;
+    }
   }
 }
 
@@ -543,6 +560,7 @@
 
   .project .projects {
     font-size: 38px;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 2.64px;
     line-height: normal;
@@ -552,6 +570,7 @@
 
   .project .years {
     font-size: 22px;
+    text-align: center;
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
@@ -560,11 +579,6 @@
 
   .hide-on-mobile {
     display: none;
-  }
-
-  .project .line {
-    border-top: 1px solid black;
-    width: 100%;
   }
 
   .project .project-details {
@@ -733,7 +747,7 @@
     background: white;
     border-radius: 10px;
     max-width: 280px; /* Adjusted width */
-    max-height: 100vh;
+    max-height: 70vh;
     width: 90%;
     height: 90%;
     padding: 20px;
